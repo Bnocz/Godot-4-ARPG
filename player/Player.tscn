@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://desfdbolu2djr"]
+[gd_scene load_steps=10 format=3 uid="uid://desfdbolu2djr"]
 
 [ext_resource type="Texture2D" uid="uid://bevqa1jqq83ek" path="res://ARt/playersprites.png" id="1_rq34l"]
 [ext_resource type="Script" path="res://player/Player.gd" id="1_vjxnc"]
@@ -95,6 +95,9 @@ _data = {
 "walkUp": SubResource("Animation_8e3d1")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgnrw"]
+size = Vector2(14, 2.5)
+
 [node name="Berby" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -114,3 +117,5 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1.75)
+shape = SubResource("RectangleShape2D_dgnrw")
