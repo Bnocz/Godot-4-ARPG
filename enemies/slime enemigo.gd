@@ -26,6 +26,7 @@ func updateAnimation():
 	if velocity.y > 0:
 		animationString = "walkDown"
 	
+	
 	animations.play(animationString)
 
 func _physics_process(delta):
