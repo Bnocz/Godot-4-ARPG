@@ -28,7 +28,7 @@ func updateAnimation():
 	
 	
 	animations.play(animationString)
-
+#ok
 func _physics_process(delta):
 	updateVelocity()
 	move_and_slide()
